@@ -36,12 +36,26 @@
     }
     main {
       flex: 1;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    section {
-      margin-bottom: 2rem;
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
     }
     footer {
       background: #2c3e50;
@@ -71,15 +85,19 @@
     <p>Turning ideas into code, and code into tools that make a difference.</p>
   </header>
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I'm a Computer Science student with a passion for machine learning, biology, and scientific computing. I enjoy solving problems at the intersection of science and technology, building tools that bridge intelligent computation and real-world impact.</p>
+    <section class="about">
+      <img src="profile.jpg" alt="Jeffrey Cole">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science student at University of Maryland with a passion for machine learning. I enjoy solving problems at the intersection of science and technology and building tools that bridge intelligent computation and real-world impact.</p>
+      </div>
     </section>
   </main>
   <footer>
     <ul>
       <li><a href="mailto:jeffreylcole7@gmail.com">jeffreylcole7@gmail.com</a></li>
       <li><a href="https://github.com/jlcole22" target="_blank">github.com/jlcole22</a></li>
+      <li><a href="Jeffrey_Cole_Resume.pdf" target="_blank">Resume (PDF)</a></li>
     </ul>
   </footer>
 </body>
