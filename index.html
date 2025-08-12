@@ -20,29 +20,28 @@
       flex-direction: column;
       min-height: 100vh;
     }
-    .container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    header {
+      background: #2c3e50;
+      color: white;
       padding: 2rem;
-    }
-    .blurb {
-      max-width: 600px;
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
       text-align: center;
     }
-    h1 {
+    header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      color: #2c3e50;
     }
-    p {
+    header p {
       font-size: 1.1rem;
-      color: #555;
+      color: #ecf0f1;
+    }
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
     }
     footer {
       background: #2c3e50;
@@ -54,6 +53,7 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+      flex-wrap: wrap;
     }
     footer a {
       color: #ecf0f1;
@@ -66,16 +66,20 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="blurb">
-      <h1>Hi there, I'm Jeffrey Cole!</h1>
-      <p>Computer Science student passionate about machine learning, biology, and scientific computing. Building tools that bridge intelligent computation and real-world impact.</p>
-    </div>
-  </div>
+  <header>
+    <h1>Hi there, I'm Jeffrey Cole!</h1>
+    <p>Turning ideas into code, and code into tools that make a difference.</p>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a Computer Science student with a passion for machine learning, biology, and scientific computing. I enjoy solving problems at the intersection of science and technology, building tools that bridge intelligent computation and real-world impact.</p>
+    </section>
+  </main>
   <footer>
     <ul>
-      <li><a href="mailto:jeffreylcole7@gmail.com">Email</a></li>
-      <li><a href="https://github.com/jlcole22" target="_blank">GitHub</a></li>
+      <li><a href="mailto:jeffreylcole7@gmail.com">jeffreylcole7@gmail.com</a></li>
+      <li><a href="https://github.com/jlcole22" target="_blank">github.com/jlcole22</a></li>
     </ul>
   </footer>
 </body>
